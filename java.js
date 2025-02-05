@@ -24,7 +24,7 @@ function kartOlustur(index) {
 function reklamKartiOlustur() {
     const reklamKarti = document.createElement("div");
     reklamKarti.classList.add("ad-card");
-    reklamKarti.innerHTML = '<img alt="Reklam" src="https://via.placeholder.com/300x150"/>'; // Placeholder reklam
+    reklamKarti.innerHTML = '<img alt="Reklam" src="https://www.medya724.com/images/haberler/medya7-24-haber-sitemize-reklam-vermek-ister-misiniz.jpg"/>'; // Placeholder reklam
     return reklamKarti;
 }
 
