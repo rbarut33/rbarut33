@@ -7,7 +7,7 @@ function kartOlustur(index) {
 
     const kartIcerik = `
         <div class="flip-card-inner">
-          <a href="'<data:post.url/>'">  <div class="flip-card-front">
+          <a expr:href="data:post.url">  <div class="flip-card-front">
                 Ön Yüz ${index + 1}
             </div>
             <div class="flip-card-back"><div id="overlay">
