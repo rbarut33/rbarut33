@@ -1,3 +1,5 @@
+//* Ramazan barut ver 1
+
 const kartlar = document.getElementById("kartlar");
 const kartSayisi = 15; // Örnek olarak 15 kart
 
