@@ -8,16 +8,16 @@ function kartOlustur(index) {
 
     const kartIcerik = `
         <div class="flip-card-inner">
-          <a href="data:post.url">  
+          <a expr:href="data:post.url">  
             <div class="flip-card-front">
-              <h1>Başlık ${index + 1}</h1> <!-- Bu kısmı JavaScript'te dinamik olarak değiştirebilirsiniz -->
+              <h1 expr:text="data:post.title">Başlık ${index + 1}</h1> <!-- Başlık dinamik olarak alınacak -->
               Ön Yüz ${index + 1}
             </div>
             <div class="flip-card-back">
               <div id="overlay">
                 <p>Arka Yüz ${index + 1}</p>
-                <p>Yayın Tarihi: <span>2025-02-05</span></p> <!-- Tarih kısmını da dinamik hale getirebilirsiniz -->
-                <p>Açıklama: Özel bir açıklama buraya gelecek.</p> <!-- Buraya açıklama eklemek için dinamik alanlar kullanabilirsiniz -->
+                <p>Yayın Tarihi: <span expr:text="data:post.date">2025-02-05</span></p> <!-- Yayın tarihi dinamik olarak alınacak -->
+                <p expr:text="data:post.customField('description')">Açıklama: Özel bir açıklama buraya gelecek.</p> <!-- Açıklama dinamik olarak alınacak -->
               </div>
             </div>
           </a>
