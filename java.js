@@ -8,10 +8,12 @@ function kartOlustur(index) {
     const kartIcerik = `
         <div class="flip-card-inner">
           <a expr:href="data:post.url">  <div class="flip-card-front">
-                Ön Yüz ${index + 1}
+              <h1 expr:text="data:post.title"></h1>
+  Ön Yüz ${index + 1}
             </div>
             <div class="flip-card-back"><div id="overlay">
-                Arka Yüz ${index + 1}
+                 <data:post.customField name="description"/>  Arka Yüz ${index + 1} <p expr:text="data:post.date"></p>
+
                   </div>
             </div>
             </a>
