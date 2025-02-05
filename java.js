@@ -14,6 +14,7 @@ function kartOlustur(index) {
                 Arka Yüz ${index + 1}
                   </div>
             </div>
+            </a>
         </div>
     `;
     kart.innerHTML = kartIcerik;
